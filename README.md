@@ -21,7 +21,7 @@ Documenting a transition to Data Engineering: From core SQL & Python foundations
 
 
 ## 🗺️ Navigation
-- [📚 Theory & Concepts](./01_Theory_and_Concepts/de_lifecycle.md) - The "Why" before the "How."
+- [📚 Theory & Concepts](./01_Theory_and_Concepts/de_core_concepts_and_theories.md) - The "Why" before the "How."
 - [🐧 Environment Setup](./02_Environment_Setup/wsl2_docker_config.md) - How I built my Linux/Windows lab.
 - [🚀 Zoomcamp Progress](./03_Zoomcamp_Labs/) - Weekly lab notes and homework.
 - [🛠️ Project Portfolio](./04_Projects/) - End-to-end data applications.
