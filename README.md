@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100%" src="/path-to-de.png" alt="Path to Data Engineering: Notes from the Field">
+  <img width="100%" src="/image.path-to-de.png" alt="Path to Data Engineering: Notes from the Field">
 </p>
 
 <h1 align="center">
@@ -154,7 +154,7 @@ Having solidified my theoretical foundations, I am currently transitioning to th
 The goal of this "Field Lab" is to move away from local scripts and build a fully automated, production-grade data pipeline in the cloud.
 ---
 
-# 🚀 Phase 4: Applied Engineering (The DataTalks.Club Zoomcamp)
+# 🚀 Phase 5: Applied Engineering (The DataTalks.Club Zoomcamp)
 
 Having solidified my theoretical foundations, I am currently transitioning to the **Applied** phase of my journey. I am enrolled in the [DataTalks.Club Data Engineering Zoomcamp](https://datatalks.club/blog/data-engineering-zoomcamp.html), a project-based course focused on the **Modern Data Stack**.
 
