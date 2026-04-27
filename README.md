@@ -63,8 +63,8 @@ Before transitioning into advanced orchestration, I solidified these core compet
 - **Operating Systems**: Comfortable managing workflows across both Windows and Linux to ensure production-ready script execution.
 
 ### 🐍 Data Programming & Querying
-- **Python for Automation**: Utilizing Python for more than just analysis—focusing on script modularity, API data extraction, and automating repetitive ETL tasks.
 - **Structured Query Language (SQL)**: Proficient in relational database design, complex joins, and data transformation within **PostgreSQL** and **BigQuery**.
+- **Python for Automation**: Utilizing Python for more than just analysis—focusing on script modularity, API data extraction, and automating repetitive ETL tasks.
 
 ### ☁️ Cloud & Architecture
 - **Google Cloud Platform (GCP)**: Foundational experience with Cloud Storage, BigQuery for data warehousing, and utilizing Google Cloud Shell for remote script execution.
@@ -137,8 +137,24 @@ A professional pipeline is more than just code; it must be:
 > *"Being a good data engineer has very little to do with 'how good you write code.' It is about using your experience to make good decisions regarding architecture and data models."* > — **Daniel Beach**, *Introduction to Data Engineering*
 
 ---
+# 🚀 Phase 3: SQL for Data Engineering
 
-# 🚀 Phase 2: Applied Engineering (The DataTalks.Club Zoomcamp)
+At the core of Data Engineering lies **SQL**. While it is often seen as the standard for querying, it is not
+merely a syntax tool; it is the universal lingua franca for managing, analyzing, and storing relational data
+across a cloud or distributed environment.
+
+## 🎯 The Mission
+The goal of this "Field Lab" is to move away from local scripts and build a fully automated, production-grade data pipeline in the cloud.
+---
+# 🚀 Phase 4: Python Programming for Data Engineering
+
+Having solidified my theoretical foundations, I am currently transitioning to the **Applied** phase of my journey. I am enrolled in the [DataTalks.Club Data Engineering Zoomcamp](https://datatalks.club/blog/data-engineering-zoomcamp.html), a project-based course focused on the **Modern Data Stack**.
+
+## 🎯 The Mission
+The goal of this "Field Lab" is to move away from local scripts and build a fully automated, production-grade data pipeline in the cloud.
+---
+
+# 🚀 Phase 4: Applied Engineering (The DataTalks.Club Zoomcamp)
 
 Having solidified my theoretical foundations, I am currently transitioning to the **Applied** phase of my journey. I am enrolled in the [DataTalks.Club Data Engineering Zoomcamp](https://datatalks.club/blog/data-engineering-zoomcamp.html), a project-based course focused on the **Modern Data Stack**.
 
