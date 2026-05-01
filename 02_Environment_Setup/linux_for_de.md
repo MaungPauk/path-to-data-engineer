@@ -148,6 +148,8 @@ sudo apt install -y build-essential
 
 Install Visual Studio Code and the **Remote - WSL** extension.
 
+See more details about [*Visual Studio Code (VSCode) installation](./vscode_extensions.md)
+
 Then open WSL projects directly in VS Code:
 
 ```bash
@@ -188,12 +190,8 @@ wsl --set-default-version 2
 
 ---
 
-## Summary
-
-WSL provides a lightweight Linux environment inside Windows, enabling:
-
-* Real-world data engineering workflows
-* Better compatibility with cloud tools
-* Seamless integration with Python, Git, Docker, and SQL tools
+## Basic linux commands
+```bash
+ls #
 
 ---

@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100%" src="/image.path-to-de.png" alt="Path to Data Engineering: Notes from the Field">
+  <img width="100%" src="/image/path-to-de.png" alt="Path to Data Engineering: Notes from the Field">
 </p>
 
 <h1 align="center">
@@ -22,13 +22,16 @@ Documenting a transition to Data Engineering: From core SQL & Python foundations
 
 ## 🗺️ Navigation
 - [📚 Theory & Concepts](./01_Theory_and_Concepts/de_core_concepts_and_theories.md) - The "Why" before the "How."
-- [🐧 Environment Setup](./02_Environment_Setup/wsl2_docker_config.md) - How I built my Linux/Windows lab.
+- [🐧 Environment Setup](./02_Environment_Setup/linux_for_de.md) - How I built my Linux/Windows lab.
+- [ SQL for Data Engineer](./03_SQL_de/README_SQL.md) - Why SQL is essential for Data Engineering
+- [Git_Docker]()
+- [🐍 Python for Data Engineer](./04_python_de) - Python for ETL process
 - [🚀 Zoomcamp Progress](./03_Zoomcamp_Labs/) - Weekly lab notes and homework.
 - [🛠️ Project Portfolio](./04_Projects/) - End-to-end data applications.
 
 ---
 
-# 🚀 Phase 1: From Data Analyst to Data Engineer Journey
+# Phase 1: From Data Analyst to Data Engineer Journey
 
 ## 🏗️ Foundational Skills & Certifications
 
@@ -46,13 +49,12 @@ I built my foundational data literacy and analytical thinking through two Google
 - **Methodology** : Applied the Ask, Prepare, Process, Analyze, Share, and Act framework to real-world case studies.
 - **Learned from here**: [Google Business Intelligence Certificate Course - Coursera](https://www.coursera.org/professional-certificates/google-business-intelligence)
 - **Notes from** : - **Notes from** : [Google Business Intelligence Certificate Course](./00_foundations/google_bi.md)
+
 ---
 
 ## 🛠️ Why the Shift? From Analytics to Engineering 
 
 Through my **Google Data Analytics and Business Intelligence** certifications, I learned how to turn raw data into insights. However, I noticed a recurring challenge: Insights are only as good as the pipelines that deliver them.
-
----
 
 ## 🛠️ Technical Foundation: The DE Toolkit
 
@@ -60,7 +62,10 @@ Before transitioning into advanced orchestration, I solidified these core compet
 
 ### 🖥️ Systems & Environment
 - **Linux for Windows Users (WSL2**): Mastered the transition from GUI to Command Line (CLI). Proficient in Bash navigation, file system permissions, and managing local development environments.
+  * Learning Note -> [**Linux for Data Engineering**](./02_Environment_Setup/linux_for_de.md)
 - **Operating Systems**: Comfortable managing workflows across both Windows and Linux to ensure production-ready script execution.
+- **IDE**: There are many IDE for code editing tools such as Virtual Studio Code (VS Code), Jetbrain, Sublinetxt, Cursor, Antigravity, etc.
+  * Learning Note -> [**VS Code and Extensions Setup**](./02_Environment_Setup/vscode_extensions.md)
 
 ### 🐍 Data Programming & Querying
 - **Structured Query Language (SQL)**: Proficient in relational database design, complex joins, and data transformation within **PostgreSQL** and **BigQuery**.
@@ -69,92 +74,79 @@ Before transitioning into advanced orchestration, I solidified these core compet
 ### ☁️ Cloud & Architecture
 - **Google Cloud Platform (GCP)**: Foundational experience with Cloud Storage, BigQuery for data warehousing, and utilizing Google Cloud Shell for remote script execution.
 - **Pipeline Architecture**: Understanding the core flow of data from **Source → Stage → Warehouse**, with a focus on data integrity and schema design (Star/Snowflake).
+
 ---
 
-## 📚 Engineering Foundations & Theories
+# Phase 2: Learning for Data Engineering
+
+
+## 📚 Data Engineering Foundations & Theories
 
 Before writing a single line of code, I invested time into understanding the architectural principles of Data Engineering. I believe that a strong grasp of the "Why" and "How" is what separates a Coder from an Engineer.
 
-My theoretical foundation is built upon industry-standard resources, most notably:
-1. [Introduction to Data Engineering](http://leanpub.com/dataengineeringwithpython) (Daniel Beach)
-2. [Fundamentals of Data Engineering](http://oreilly.com/) (Joe Reis & Matt Housley)
+Coding is the *tool*; Concepts and Theories are the *blueprint*. A theoretical framework allows me to avoid
+coding errors, ensure scalability, and align code with business goals. If I don't understand the concepts, the
+system I built is hard to maintain or misaligned with the business reality.
 
-### Core Concepts & Theories of Data Engineering
+> *"Being a good data engineer has very little to do with 'how good you write code.' It is about using your experience to make good decisions regarding architecture and data models."*  — **Daniel Beach**, *Introduction to Data Engineering*
 
-This note summarizes the foundational principles derived from *Fundamentals of Data Engineering* (Reis & Housley) and *Introduction to Data Engineering* (Beach). Understanding these theories is the first step toward building professional-grade data systems.
+I have taken notes about: [**Data Engineering Core Concepts and Theories**](./01_Theory_and_Concepts/de_core_concepts_and_theories.md)
 
----
-
-### 1. The Data Engineering Lifecycle
-The "Lifecycle" is the most important framework in the field. It moves the focus away from specific tools and onto the evolution of data.
 
 ---
 
-### 2. The "Undercurrents"
-These are the constant responsibilities that a Data Engineer must manage across every stage of the lifecycle:
 
-* **Security & Privacy:** Protecting data at rest and in transit.
-* **Data Management:** Ensuring data quality, governance, and master data management.
-* **DataOps:** Applying DevOps to data (Automation, Testing, and CI/CD).
-* **Data Architecture:** Designing the overall blueprint of the data system.
-* **Orchestration:** Coordinating the timing and dependencies of pipeline tasks.
+## Learning Skills
+As analysis of essential skills for data engineering, the following skills is needed to master:
+1.  Linux & Bash
+2.  SQL and Database
+3.  Python
+4.  Version Control (Git & Github)
+5.  Containerzations (Docker)
+6.  Data Warehousing
+7.  Pipelines (ETL, ELT)
+8.  GCP, AWS, Azure
+9.  Orchestration & Transformation (Airflow, dbt, Terraform, Pyspark, Kafka) 
 
----
+## SQL for Data Engineering
 
-### 3. Storage & Processing Theories
-
-#### OLTP vs. OLAP
-* **OLTP (Online Transactional Processing):** Designed for many small, fast transactions (e.g., a banking app). Usually row-based.
-* **OLAP (Online Analytical Processing):** Designed for complex queries and large aggregations (e.g., a yearly sales report). Usually columnar.
-
-#### Row-based vs. Columnar Storage
-* **Row-based:** Better for looking up specific individual records.
-* **Columnar (e.g., Parquet, Avro):** Better for analytical queries. It allows for high compression and "fine-grained seeking," meaning the system only reads the columns it needs.
-
----
-
-### 4. Data Modeling Concepts
-Data modeling is the "half art, half science" stage that can make or break a project.
-
-* **The Grain:** The level of detail represented by a single row in a table.
-* **Fact Tables:** Quantitative data (measures/numbers) about business events.
-* **Dimension Tables:** Descriptive context (who, what, where) for the facts.
-* **Schemas:** * **Star Schema:** A central fact table connected to multiple dimension tables.
-    * **Snowflake Schema:** An extension of the Star schema where dimensions are further normalized.
-
----
-
-### 5. Engineering Principles for Pipelines
-A professional pipeline is more than just code; it must be:
-
-1.  **Idempotent:** Running the process multiple times should produce the same result as running it once. This is critical for recovering from errors.
-2.  **Repeatable:** The code should work exactly the same in any environment (Local, Dev, or Production).
-3.  **Resilient:** The system should handle failures (like a missing file or a network timeout) without crashing.
-4.  **Scalable:** The architecture should handle 1GB of data as efficiently as it handles 1TB.
-
----
-
-> *"Being a good data engineer has very little to do with 'how good you write code.' It is about using your experience to make good decisions regarding architecture and data models."* > — **Daniel Beach**, *Introduction to Data Engineering*
-
----
-# 🚀 Phase 3: SQL for Data Engineering
-
-At the core of Data Engineering lies **SQL**. While it is often seen as the standard for querying, it is not
-merely a syntax tool; it is the universal lingua franca for managing, analyzing, and storing relational data
+At the core of Data Engineering lies [**SQL**](./03_SQL_de/README_SQL.md). While it is often seen as the standard for querying, it is not merely a syntax tool; it is the universal lingua franca for managing, analyzing, and storing relational data
 across a cloud or distributed environment.
 
-## 🎯 The Mission
-The goal of this "Field Lab" is to move away from local scripts and build a fully automated, production-grade data pipeline in the cloud.
+SQL is the backbone of Data Engineering. It handles data extraction, querying, and optimization across the modern
+stack. Without it, pipelines fail, models drift, and performance degrades. It is the cornerstone of scalable data
+architectures and ensures long-term maintainability.
+
+Ultimately, the mission of SQL is to bridge the gap between the Data Engineer's raw data and business value,
+ensuring the engineering process is transparent, reproducible, and aligned with data quality goals.
+
+Read more about: [**Why SQL is essential for Data Engineering**](./03_SQL_de/README_SQL.md)
+
 ---
-# 🚀 Phase 4: Python Programming for Data Engineering
+## Python Programming for Data Engineering
 
-Having solidified my theoretical foundations, I am currently transitioning to the **Applied** phase of my journey. I am enrolled in the [DataTalks.Club Data Engineering Zoomcamp](https://datatalks.club/blog/data-engineering-zoomcamp.html), a project-based course focused on the **Modern Data Stack**.
+Python stands as a cornerstone in data engineering due to its unparalleled versatility, robust ecosystem, and seamless integration with diverse tools and technologies. 
+Here are 5 essential points of Python usage:
+- Python streamlines data processing, analysis, and automation with robust tools.
+- It enhances scalability, enabling efficient handling of large datasets.
+- Versatile libraries integrate seamlessly with databases and APIs.
+- Essential for machine learning, supporting model development and deployment.
+- Offers flexibility, adapting to diverse data engineering challenges effectively.
 
-## 🎯 The Mission
-The goal of this "Field Lab" is to move away from local scripts and build a fully automated, production-grade data pipeline in the cloud.
+Read more about: [**Python for Data Engineering**](./04_python_de/python_essentials_for_data_engineering.md)
+
 ---
 
-# 🚀 Phase 5: Applied Engineering (The DataTalks.Club Zoomcamp)
+## Version Control (Git & Github)
+- Git manages version control for code tracking.
+- GitHub hosts repositories for collaboration.
+- Supports branching and merging efficiently.
+- Offers security and access management.
+- Facilitates project coordination and deployment.
+
+Read more about: [**Git and Github**](./05_Git-Github/git_and_github.md)
+
+# Phase 3: Applied Engineering (The DataTalks.Club Zoomcamp)
 
 Having solidified my theoretical foundations, I am currently transitioning to the **Applied** phase of my journey. I am enrolled in the [DataTalks.Club Data Engineering Zoomcamp](https://datatalks.club/blog/data-engineering-zoomcamp.html), a project-based course focused on the **Modern Data Stack**.
 
