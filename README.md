@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100%" src="/image/path-to-de.png" alt="Path to Data Engineering: Notes from the Field">
+  <img width="100%" src="/images/path-to-de.png" alt="Path to Data Engineering: Notes from the Field">
 </p>
 
 <h1 align="center">
