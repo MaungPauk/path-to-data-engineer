@@ -7,4 +7,6 @@
 
 ---
 
+
+
 **[↑ Up](/README.md)** | **[← Previous](02-linux_setup_for_de.md)** | **[Next →](04-SQL.md)**
