@@ -262,8 +262,7 @@ protect data integrity and confidentiality in data engineering environments.
 ### References
 - [**How to install Linux on Windows with WSL**](https://learn.microsoft.com/en-us/windows/wsl/install)
 - [**The Linux commandline for begnners**](https://documentation.ubuntu.com/desktop/en/latest/tutorial/the-linux-command-line-for-beginners/)
-- [**Ubuntu Linux For You** -by Ei Maung](https://www.eimaung.com) - Myanmar Language
-- [**Get Started with Python** - by Coursera](https://www.coursera.org)
+- [**Ubuntu Linux For You** -by Ei Maung](https://eimaung.com/ubuntu-for-you/) - Myanmar Language
 
 
 
