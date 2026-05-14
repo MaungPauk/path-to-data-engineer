@@ -84,7 +84,7 @@ PostgreSQL is often preferred because it balances capability, reliability, and c
 ---
 
 ## **📌 Notes**
-### Here is more details about => [My Notes for PostgreSQL Learning](https://github.com/maungpauk/postgresql-learning-notes)
+### Here is more details about => [My Notes for PostgreSQL Learning](https://github.com/maungpauk/PostgreSQL-for-data-engineering)
 
 ---
 
